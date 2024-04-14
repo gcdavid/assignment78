@@ -13,3 +13,17 @@ let lastY = 0;
 function updateBrushSizeDisplay() {
   document.getElementById("brushSize").textContent = brushSize;
 }
+
+// Function to handle brush color change
+function changeBrushColor(color) {
+  brushColor = color;
+  context.strokeStyle = brushColor;
+  // Reset composite operation to draw mode
+  context.globalCompositeOperation = "source-over";
+}
+
+// Function to handle brush size change
+function changeBrushSize(size) {
+  brushSize = size;
+  updateBrushSizeDisplay();
+}
