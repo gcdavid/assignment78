@@ -27,3 +27,20 @@ function changeBrushSize(size) {
   brushSize = size;
   updateBrushSizeDisplay();
 }
+
+// Event listeners for brush color buttons
+document.getElementById("black").addEventListener("click", function () {
+  changeBrushColor("#000000");
+});
+
+document.getElementById("pink").addEventListener("click", function () {
+  changeBrushColor("#f50057");
+});
+
+document.getElementById("blue").addEventListener("click", function () {
+  changeBrushColor("#2979ff");
+});
+
+document.getElementById("yellow").addEventListener("click", function () {
+  changeBrushColor("#ffd600");
+});
