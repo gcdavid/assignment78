@@ -8,3 +8,8 @@ let brushSize = 5;
 let paintState = false;
 let lastX = 0;
 let lastY = 0;
+
+// Function to update brush size display
+function updateBrushSizeDisplay() {
+  document.getElementById("brushSize").textContent = brushSize;
+}
